@@ -1,0 +1,39 @@
+<header>
+  <app-logo></app-logo>
+  <nav>
+    <span class="link active">
+      <img [src]="'/assets/images/grid.svg'" />
+      <a [routerLink]="'/'">Task List</a>
+    </span>
+    <span class="link">
+      <img [src]="'/assets/images/planet.svg'" />
+
+      <a [routerLink]="'/'">News</a>
+    </span>
+    <span class="link">
+      <img [src]="'/assets/images/question.svg'" />
+      <a [routerLink]="'/'">Help</a>
+    </span>
+  </nav>
+  <div class="user_interface">
+    <div class="balance">
+      <div class="push">+</div>
+      <div class="value">
+        <img src="/assets/images/coins.svg" />
+        1234
+      </div>
+    </div>
+    <div class="user">
+      <a routerLink="/auth">
+        <div class="user_avatar">
+          <img src="assets/images/user.svg" />
+        </div>
+      </a>
+      <div class="menu">
+        <span class="arrow">
+          <img src="assets/images/arrow.svg"/>
+        </span>
+      </div>
+    </div>
+  </div>
+</header>

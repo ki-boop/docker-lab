@@ -1,0 +1,102 @@
+@import "../../../../assets/css/variable";
+header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0 2px 4px 0 #a6adb1;
+
+  .logo {
+    a {
+      height: 20px;
+    }
+    img {
+      width: 20px;
+      height: auto;
+    }
+  }
+
+  .buttons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+    a {
+      height: 20px;
+    }
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  nav {
+    display: flex;
+    gap: 40px;
+
+    .link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      opacity: 0.3;
+
+      img {
+        height: 24px;
+        width: 24px;
+      }
+
+      a {
+        text-decoration: none;
+        color: #000;
+      }
+    }
+
+    .active {
+      opacity: 1 !important;
+    }
+  }
+
+  .user_interface {
+    display: flex;
+    gap: 10px;    
+
+    .balance {
+      background: $grey-background;
+      height: 35px;
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      padding: 5px;
+
+      .push {
+        border-radius: 10px;
+        background: $blue-color;
+        position: relative;
+        text-align: center;
+        vertical-align: middle;
+        width: 30px;
+        height: 30px;
+        color: #fff;
+        line-height: 28px;
+        font-size: 20px;
+      }
+
+      .value {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        padding: 3px 30px 0px 10px;
+      }
+    }
+
+    .user{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+}

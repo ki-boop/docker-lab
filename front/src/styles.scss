@@ -1,0 +1,19 @@
+@font-face {
+  font-family: SF Pro Display;
+  src: url(assets/fonts/SFProDisplay-Medium.ttf);
+}
+
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: SF Pro Display;
+}
+
+.clickable {
+  cursor: pointer;
+}
