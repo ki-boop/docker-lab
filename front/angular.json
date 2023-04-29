@@ -72,7 +72,8 @@
             }
           },
           "options": {
-            "proxyConfig": "proxy.conf.dev.ts"
+            "browserTarget": "alfaSchool:build",
+            "proxyConfig": "src/proxy.conf.json"
           },
           "defaultConfiguration": "development"
         },

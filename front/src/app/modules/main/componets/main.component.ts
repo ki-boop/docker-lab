@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { MainService } from '../service/main.service';
-import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-main',
@@ -8,8 +7,9 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['main.component.scss'],
 })
 export class MainComponent implements OnInit {
-  constructor(public mainService: MainService, private http: HttpClient) {}
+  constructor(public mainService: MainService) {}
+
   ngOnInit(): void {
-    this.mainService.getMachines().subscribe();
+    this.mainService.getList().subscribe();
   }
 }

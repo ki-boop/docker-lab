@@ -3,8 +3,8 @@ import { BaseHttpClientService } from '../../../core/service/base-http-clent.ser
 @Injectable({
   providedIn: 'root',
 })
-export class MainService extends BaseHttpClientService {
+export class CatalogService extends BaseHttpClientService {
   getList() {
-    return this.get('');
+    return this.get('users');
   }
 }
